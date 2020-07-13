@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadingPage"
+    android:background="@drawable/reading_page"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="20dp">
+
+             <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+                 android:onClick="goHome"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="20dp"
+        android:gravity="end">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rr_h1"
+                android:gravity="center_horizontal"
+                android:textSize="40dp"
+                android:fontFamily="@font/brlndb"
+                android:textColor="@color/text"/>
+
+        </LinearLayout>
+
+       <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/film_fourteen"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter I"
+            android:textColor="@color/SecondaryText"
+            android:textSize="20dp"
+            android:fontFamily="@font/brlndb"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="150dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reading_room"
+            android:textColor="@color/PrimaryText"
+            android:ems="10"
+            android:textSize="14dp"
+            android:fontFamily="@font/corbeli"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:elevation="40dp"
+        android:background="@drawable/chapter_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rr_h3"
+            android:textColor="@color/SecondaryText"
+            android:textSize="20dp"
+            android:fontFamily="@font/brlndb"
+           android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:elevation="40dp"
+        android:background="@drawable/chapter_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rr_h4"
+            android:textColor="@color/SecondaryText"
+            android:textSize="20dp"
+            android:fontFamily="@font/brlndb"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:elevation="40dp"
+        android:background="@drawable/chapter_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/rr_h5"
+            android:textColor="@color/SecondaryText"
+            android:textSize="20dp"
+            android:fontFamily="@font/brlndb"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

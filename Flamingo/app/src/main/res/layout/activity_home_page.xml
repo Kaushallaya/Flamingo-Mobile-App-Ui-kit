@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_page"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="end">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_propic"
+                    android:onClick="goProfile"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="268dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/searchbar_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:layout_width="0px"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:drawableStart="@drawable/ic_search"
+                    android:hint="@string/search_bar"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:layout_width="0px"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:width="5dp"
+                    android:height="5dp"
+                    android:background="@drawable/ic_filter"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="25dp"
+                android:paddingRight="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brlndb"
+                    android:text="@string/home_h1"
+                    android:textColor="@color/PrimaryText"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/SecondaryText"
+                    android:onClick="goTrend"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/film_one_bg"
+                android:elevation="20dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:onClick="readBook">
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_one"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Shannion Benish"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="How to Help"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_two" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Neil Gaiman"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Norse mythlogy"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_three" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Elisabeth Sheff"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Next Door"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_five" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Neil Gaiman"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Mysty of Earth"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="40dp"
+                android:paddingRight="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brlndb"
+                    android:text="@string/home_h2"
+                    android:textColor="@color/PrimaryText"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/SecondaryText"
+                    android:onClick="goCategory"/>
+
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/Divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220px"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="90px"
+                    android:paddingRight="90px">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200px"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:background="@drawable/film_cat_bg"
+                            android:elevation="12dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="90px"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30px"
+                                android:background="@drawable/ic_cat_1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/acaslonproregular"
+                                android:text="Love"
+                                android:textColor="@color/PrimaryText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="30px"
+                            android:background="@drawable/film_cat_bg"
+                            android:elevation="12dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150px"
+                                android:layout_height="120px"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10px"
+                                android:background="@drawable/ic_cat_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/acaslonproregular"
+                                android:text="Food"
+                                android:textColor="@color/PrimaryText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="30px"
+                            android:background="@drawable/film_cat_bg"
+                            android:elevation="12dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="90px"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30px"
+                                android:background="@drawable/ic_cat_3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/acaslonproregular"
+                                android:text="Si-Fi"
+                                android:textColor="@color/PrimaryText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="30px"
+                            android:background="@drawable/film_cat_bg"
+                            android:elevation="12dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="90px"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30px"
+                                android:background="@drawable/ic_cat_4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/acaslonproregular"
+                                android:text="Medicle"
+                                android:textColor="@color/PrimaryText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            android:layout_marginLeft="30px"
+                            android:background="@drawable/film_cat_bg"
+                            android:elevation="12dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100px"
+                                android:layout_height="90px"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="30px"
+                                android:background="@drawable/ic_cat_5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/acaslonproregular"
+                                android:text="History"
+                                android:textColor="@color/PrimaryText" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="40dp"
+                android:paddingRight="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brlndb"
+                    android:text="@string/home_h3"
+                    android:textColor="@color/PrimaryText"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/SecondaryText"
+                    android:onClick="goTrend"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/film_one_bg"
+                android:elevation="20dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:onClick="readBook">
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_five"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Neil Gaiman"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Mistry of Earth"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_four" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Charlotte E."
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Conspiracy"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_six" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Chloe Hooper"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="The Arsonist"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_seven" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Charlotte E."
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Witch Blood"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="40dp"
+                android:paddingRight="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brlndb"
+                    android:text="@string/home_h4"
+                    android:textColor="@color/PrimaryText"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/SecondaryText"
+                    android:onClick="goAuthor"/>
+
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/Divider" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250px"
+                            android:layout_marginTop="100px"
+                            android:background="@drawable/film_aut_bg2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="120px"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:gravity="center"
+                                android:text="Stephen King"
+                                android:textColor="@color/text" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10px"
+                                    android:text="2k Fallow"
+                                    android:textSize="20px" />
+
+                                <androidx.viewpager.widget.ViewPager
+                                    android:layout_width="1dp"
+                                    android:layout_height="10dp"
+                                    android:layout_margin="10px"
+                                    android:background="@color/SecondaryText" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10px"
+                                    android:text="50 Books"
+                                    android:textSize="20px" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:background="@drawable/film_auth1" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250px"
+                            android:layout_marginTop="100px"
+                            android:background="@drawable/film_aut_bg2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="120px"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:gravity="center"
+                                android:text="J K Rowling"
+                                android:textColor="@color/text" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10px"
+                                    android:text="2.5k Fallow"
+                                    android:textSize="20px" />
+
+                                <androidx.viewpager.widget.ViewPager
+                                    android:layout_width="1dp"
+                                    android:layout_height="10dp"
+                                    android:layout_margin="10px"
+                                    android:background="@color/SecondaryText" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10px"
+                                    android:text="23 Books"
+                                    android:textSize="20px" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:background="@drawable/film_auth2" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250px"
+                            android:layout_marginTop="100px"
+                            android:background="@drawable/film_aut_bg2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="120px"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:gravity="center"
+                                android:text="Author C.Clack"
+                                android:textColor="@color/text" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10px"
+                                    android:text="1k Fallow"
+                                    android:textSize="20px" />
+
+                                <androidx.viewpager.widget.ViewPager
+                                    android:layout_width="1dp"
+                                    android:layout_height="10dp"
+                                    android:layout_margin="10px"
+                                    android:background="@color/SecondaryText" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10px"
+                                    android:text="15 Books"
+                                    android:textSize="20px" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:background="@drawable/film_auth3" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="32dp"
+                android:paddingTop="40dp"
+                android:paddingRight="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/brlndb"
+                    android:text="@string/home_h3"
+                    android:textColor="@color/PrimaryText"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/SecondaryText"
+                    android:onClick="goTrend"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/film_one_bg"
+                android:elevation="20dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:onClick="readBook">
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_seven"
+                                android:contentDescription="@string/todo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Charlotte E."
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Family End"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/flm_eight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Neil Gaiman"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="Book of You"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_nine" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Chloe Hooper"
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="White Raven"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/film_one" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5px"
+                                android:text="Charlotte E."
+                                android:textColor="@color/SecondaryText"
+                                android:textSize="6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/fredokaoneregular"
+                                android:paddingTop="5px"
+                                android:text="How to Help"
+                                android:textColor="@color/PrimaryText"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

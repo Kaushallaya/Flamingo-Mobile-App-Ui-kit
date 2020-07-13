@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Flamingo</string>
+    <string name="read_now">READ NOW</string>
+    <string name="search_bar">Search name or auther</string>
+    <string name="home_h1">Trending now</string>
+    <string name="home_h2">Categories</string>
+    <string name="home_h3">Recently View</string>
+    <string name="home_h4">Popular Authors</string>
+    <string name="home_h5">Best Share</string>
+    <string name="see_all">see all</string>
+    <string name="book_h1">Synopsis</string>
+    <string name="book_h2">Similar Book</string>
+
+    <string name="prf_book">Books</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="prf_btn">Edit Profile</string>
+    <string name="prf_cart">My Cart</string>
+    <string name="prf_purchases">Purchases</string>
+    <string name="prf_account">Account</string>
+    <string name="prf_night">Night Mode</string>
+    <string name="prf_notification">Notification</string>
+    <string name="prf_language">Language</string>
+    <string name="prf_help">Help</string>
+    <string name="prf_sout">Sign Out</string>
+    <string name="prf_h1">Account</string>
+    <string name="prf_h2">Settings</string>
+
+    <string name="log_h1">Sign In</string>
+    <string name="log_h2">Welcome Back</string>
+    <string name="log_sub">We love to see you again.</string>
+    <string name="log_user">Username or Email Address.</string>
+    <string name="log_pass">Password</string>
+    <string name="log_submit">SUBMIT</string>
+    <string name="log_forgot">Forgot your password?</string>
+
+    <string name="btn_sin">Sign in</string>
+    <string name="btn_sup">Sign up</string>
+
+    <string name="reg_h1">Sign Up</string>
+    <string name="reg_h2">Lets Join Us</string>
+    <string name="reg_sub">We would love you to join us</string>
+    <string name="reg_user">Username</string>
+    <string name="reg_mail">Email Address.</string>
+    <string name="btn_reg">REGISTER</string>
+
+    <string name="rr_h1">Reading Room</string>
+    <string name="rr_h2">Chapter I</string>
+    <string name="rr_h3">Chapter II</string>
+    <string name="rr_h4">Chapter III</string>
+    <string name="rr_h5">Chapter IV</string>
+
+    <string name="bs_h1">Book Store</string>
+    <string name="bs_btn1">Add to cart</string>
+    <string name="bs_btn2">Add Wishlist</string>
+
+    <string name="cat_h1">Categories</string>
+    <string name="cat_h2">Biography</string>
+    <string name="cat_h3">Business</string>
+    <string name="cat_h4">Children</string>
+    <string name="cat_h5">Cookery</string>
+    <string name="cat_h6">Fiction</string>
+    <string name="cat_h7">Education</string>
+
+    <string name="auth_h1">Authors</string>
+    <string name="auth_btn">Fallow</string>
+
+    <string name="font_cal">calibri</string>
+    <string name="todo">TODO</string>
+    <string name="book_intro">         Catling, an aspirant of the Influencers’ Guild, learns to wield the power of the garden carved into her skin. Friends are fewer than enemies, and those who wished her dead now plot her failure. Sworn to the young queen, she enters the world of Elan-Sia where the powerful maneuver for control of the throne \n  \n \n              Amidst rising unrest in the south and increasing pressure from the seafaring Cull Tarr, the high wards of the tiers plot rebellion. Gannon stirs the warrens, and Whitt marches with the warriors of Guardian. Propelled by revenge, Catling journeys to Mur-Vallis. Her mission—to assassinate the man who stole her past and future.... Read More</string>
+    <string name="reading_room"><![CDATA[Catling, an aspirant of the Influencers’ Guild, learns to wield the power of the garden carved into her skin. Friends are fewer than enemies, and those who wished her dead now plot her failure. Sworn to the young queen, she enters the world of Elan-Sia where the powerful maneuver for control of the throne. \n\n Amidst rising unrest in the south and increasing pressure from the seafaring Cull Tarr, the high wards of the tiers plot rebellion. Gannon stirs the warrens, and Whitt marches with the warriors of Guardian. Propelled by revenge, Catling journeys to Mur-Vallis. Her mission—to assassinate the man who stole her past & future.\n\n In the tiers of Ellegeance, the elite Influencers’ Guild holds the power to manipulate emotions. Love and fear, pain and pleasure, healing and death mark the extremes of their sway, but it’s the subtle blends that hook their victims’ hearts. They hide behind oaths of loyalty and rule the world.\n\n A child born in the grim warrens beneath the city, Catling rues the rose birthmark encircling her eye. Yet, it grants her the ability to disrupt the influencers’ sway. Established methods of civil control disintegrate before her. She’s a weapon desired by those who reign and those who rebel.]]></string>
+
+</resources>
